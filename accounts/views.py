@@ -121,14 +121,3 @@ class ProfileViewSet(viewsets.ModelViewSet):
             status=status.HTTP_200_OK
         )
     
-
-    @action(methods=['get'], detail=False, url_path='get-mentors', permission_classes=[IsAuthenticated])
-    def get_mentors(self, request):
-        mentors = Profile.objects.filter(user_type='MO')
-        serializer = ProfileSerializer(mentors, many=True)
-        return Response(
-            {
-                'results': serializer.data
-            },
-            status=status.HTTP_200_OK
-        )

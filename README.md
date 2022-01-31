@@ -1,6 +1,6 @@
 # ADPList Backend Project
 
-This is a take home project from ADPList for the role of a backend Django Engineer.
+This is a take home project from ADPList for the role of a Backend Django Engineer.
 
 ## Running the application locally
 
@@ -8,7 +8,7 @@ This project is dockerized to prevent any dependency failures. You will require 
 
 ### Running Project with Docker
 
-1. Run `docker-compose up --build -d` in the root folder.
+1. Run `docker-compose up --build -d` in the project root folder.
 2. Run the command `docker-compose exec web python manage.py migrate` to run migrations.
 
 ### Testing the endpoints

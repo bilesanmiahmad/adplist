@@ -10,6 +10,8 @@ This project is dockerized to prevent any dependency failures. You will require 
 
 1. Run `docker-compose up --build -d` in the project root folder.
 2. Run the command `docker-compose exec web python manage.py migrate` to run migrations.
+3. Run the command `docker-compose exec web python manage.py createsuperuser` to create a superuser that has permission to approve mentor profiles.
+4. Test local server on `http://localhost:3000`.
 
 ### Testing the endpoints
 

@@ -20,4 +20,4 @@ jobs:
           instance-ids: ${{ secrets.INSTANCE_ID  }}
           comment: Deploy the master branch
           working-directory: /home/ubuntu/adplist
-          run: /bin/sh ./deploy.sh
+          command: /bin/sh ./deploy.sh

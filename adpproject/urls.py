@@ -30,6 +30,6 @@ urlpatterns = [
     path('', include(router.urls))
 ]
 
-admin.site.site_header = "ADPList Admin"
+admin.site.site_header = "ADPList Admin Manager"
 admin.site.site_title = "ADPList Admin Portal"
 admin.site.index_title = "Welcome to ADPList Admin Portal"
